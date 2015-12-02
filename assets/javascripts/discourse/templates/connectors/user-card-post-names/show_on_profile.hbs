@@ -1,3 +1,8 @@
-{{#if user.show_on_profile}}
-        <br/><h2>{{user.show_on_profile}}</h2>
-{{/if}}	
+{{#each uf in userFields}}
+<script>
+console.log(uf.field);
+</script>
+      {{#if uf.field=="show_on_profile"}} value=uf.value}}
+        <br/><h2>{{uf.value}}</h2>
+      {{/if}}
+{{/each}}		  
