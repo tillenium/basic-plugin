@@ -1,0 +1,12 @@
+{{#if publicUserFields}}
+    <div class="public-user-fields">
+    {{#each uf in publicUserFields}}
+{{#if uf.value}}
+    <div class="public-user-field">
+    <span class="user-field-name">{{uf.field.name}}</span>:
+    <span class="user-field-value">{{uf.value}}</span>
+    </div>
+    {{/if}}
+{{/each}}
+</div>
+{{/if}}
